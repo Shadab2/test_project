@@ -61,7 +61,8 @@ function Modal() {
       );
     }, 1500);
     return () => clearTimeout(timer);
-  });
+  }, []);
+
   return (
     <div className="h-full w-full absolute top-0 left-0 z-10 bg-slate-400 bg-opacity-60 box-border ">
       <div className="m-[5%] bg-white h-[500px] w-[700px] mx-auto rounded-md">
